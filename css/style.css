@@ -1,0 +1,282 @@
+/* COMMON CSS STARTS */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* color: #fff; */
+}
+.align-center{
+    align-items: center;
+}
+button{
+    background-color: #cfc91d;
+    padding: 19px 40px;
+    border: none;
+    font-size:14px;
+    font-weight:800;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #000  ;
+    color:#cfc91d;
+    border-radius: 8px;
+    border:1px solid #cfc91d;
+
+}
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+}
+.heading p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 41px;
+}
+.text-align{
+    text-align: center;
+}
+p{
+    color: #7e8287;
+}
+/* COMMON CSS ENDS */
+
+
+/* NAVBER STARTS */
+nav{
+    background-color: #02918b;
+    position: sticky;
+    top: 0;
+}
+nav .menu ul li{
+    display:inline-block;
+}
+nav .menu ul li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight:800;
+    padding: 25px 25px;
+    display: block;
+}
+nav .menu ul li a:hover{
+    color: #02918b;
+    background-color: #fff;
+    border: 2px solid #cfc91d;
+}
+nav .row{
+    justify-content: space-between;
+}
+/* NAVBER ENDS */
+
+/* BANNER STARTS */
+#banner{
+    height: 727px;
+    background-image: url(../img/BANNER.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#banner .row{
+    justify-content: center;
+    height:727px ;
+    text-align: center;
+}
+#banner .banner-cnt h6{
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner .banner-cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: #fff;
+}
+#banner .banner-cnt h1:hover{
+    color:#02918b ;
+}
+#banner .banner-cnt p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner .banner-cnt img{
+    padding: 50px 0;
+}
+/* BANNER ENDS */
+
+
+/* ABOUT SECTION STARTS */
+#about{
+    padding: 98px 0;
+}
+#about .heading p{
+    padding: 0 137px;
+}
+#about .heading p strong{
+    font-size: 23px;
+}
+#about .row .abut_card{
+    width: 25%;
+}
+.abut_card{
+    border-right: 1px solid #7e8287;
+    padding: 0 60px;
+    margin-top: 70px;
+}
+.abut_card:last-child{
+    border: none;
+}
+.abut_card img{
+    padding-top: 37px;
+}
+.abut_card h4{
+   padding: 28px 0;
+   color: #7e8287;
+}
+.abut_card p{
+    font-size: 11px;
+    font-weight: 400;
+ }
+
+/* ABOUT SECTION ENDS */
+/* SERVICES SECTION STARTS */
+#services{
+    background-image: url(../img/SERVICES-IMG.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#services .services_cont{
+    padding: 75px 0;
+    width: 50%;
+}
+#services .services_cont .heading{
+    text-align: left;
+}
+#services .row .service_card{
+    width: 50%;
+    padding-top: 63px;
+}
+.service_card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 17px 0;
+}
+.service_card p{
+    padding-right: 110px;
+}
+/* SERVICES SECTION ENDS */
+
+/* MY WORK SECTION STARTS */
+#my_work .heading p{
+    padding: 0 236px;
+}
+#my_work{
+    padding: 108px 0;
+}
+#my_work .my_cont_img{
+    width: 25%;
+}
+.my_cont_img img{
+    width: 100%;
+    height: 100%;
+}
+.my_cont_img{
+    position: relative;
+}
+.my_cont_img .overlay h4{
+     font-size: 16px;
+     font-weight: 800;
+     color: #fff;
+}
+.my_cont_img .overlay p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 27px;
+}
+#my_work .overlay{
+    position: absolute;
+    background-color:rgba(2,145,139,.85);
+    inset: 20px 28px;
+    transform: scale(0);
+    transform-origin:  bottom;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#my_work .my_cont_img:hover .overlay{
+    transform: scale(1);
+}
+/* MY WORK SECTION ENDS */
+
+
+/* CONTACT SECTION STARTS */
+#contact p{
+    padding: 0 233px;
+}
+.form form{
+    background-color: #0a0a0b;
+}
+.form input{
+    display: block;
+    margin: auto;
+    padding: 65px 363px;
+    background-color:#0a0a0b ;
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 400;
+   text-align: center;
+   border-bottom: 1px solid #7e8287;
+   border-right: none;
+   border-left: none;
+}
+
+
+.form a button{
+   margin-left:46%;
+   margin-top: 70px;
+   margin-bottom: 70px;
+   
+}
+.form{
+    padding-top: 70px;
+}
+
+/* CONTACT SECTION ENDS */
+#footer{
+    background-color: #000000;
+}
+#footer h4{
+    color: #7e8287;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 12px;
+    font-weight: 400;
+}
